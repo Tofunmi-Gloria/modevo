@@ -1,0 +1,219 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e7f3ff; /* Light blue background */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    background: #007BFF; /* Blue header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ecf6ec; /* Green logo color */
+}
+
+.slogan {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4edda; /* Light green hover color */
+}
+
+/* Hero Section */
+#hero {
+    background: url('https://source.unsplash.com/1600x400/?cleaning,home') no-repeat center center/cover;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Main Sections */
+#services, #about, #contact, #testimonials, #gallery, #faq {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#services:hover, #about:hover, #contact:hover, #testimonials:hover, #gallery:hover, #faq:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #007BFF; /* Blue headings */
+    margin-bottom: 20px;
+}
+
+/* Services Styles */
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    flex: 1;
+    padding: 20px;
+    background: #d4edda; /* Light green background for services */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Testimonials Styles */
+.testimonial-item {
+    background: #f8f9fa; /* Light grey background */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Gallery Styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+/* FAQ Styles */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #007BFF; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #007BFF; /* Blue footer */
+    color: white;
+}
+
+/* Social Media Styles */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        margin: 10px;
+    }
+
+    nav {
+        display: none; /* Hide by default */
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center links */
+        background: #007BFF; /* Same background as header */
+        padding: 20px 0;
+    }
+
+    nav.active {
+        display: flex; /* Show when active */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Make it full-width */
+        padding: 0; /* Remove padding */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between items */
+    }
+}
+
